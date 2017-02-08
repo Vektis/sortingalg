@@ -5,10 +5,16 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         int [] ary = {10,8,12,59,21,40};
-        bubble(ary);
-        //select(ary);
+        System.out.println("Starting array: ");
+        for(int i : ary){
+            System.out.print(i + ",");
+        }
+       // bubble(ary);
+        System.out.println(" ");
+        select(ary);
         //quick(ary);
        // merge(ary);
+        System.out.println("Sorted array: ");
         for(int i : ary){
             System.out.print(i + ",");
         }
@@ -28,6 +34,9 @@ public class Main {
         }
     }
     public static void select(int [] a){
+        int [] nw = new int[a.length];
+
+        a = nw;
 
     }
     public static void quick(int [] a){
